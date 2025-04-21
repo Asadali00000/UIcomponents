@@ -1,0 +1,56 @@
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	border-radius: 30px;
+    width: 400px;
+    height: 100px;
+    background-color: #42a5f5;
+    margin-left: 400px;
+    margin-top: 250px;
+    overflow: hidden;
+    
+}
+.text{
+     color: #202124;
+    z-index: 2;
+ }
+ 
+.ripple {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: rgb(252 198 41/var(--tw-bg-opacity, 1));
+	border-radius: 50%;
+	transform: scale(0);
+	opacity: 1;
+	z-index: 1;
+	pointer-events: none;
+}
+
+.expand {
+	animation: rippleExpand 0.3s linear forwards;
+}
+
+.shrink {
+	animation: rippleShrink 0.3s linear forwards;
+}
+@keyframes rippleExpand {
+	to {
+		transform: scale(120);
+		opacity: 1;
+	}
+}
+
+@keyframes rippleShrink {
+	from {
+ 
+		opacity: 1;
+	}
+
+	to {
+		transform: scale(0);
+		opacity: 1;
+	}
+}
