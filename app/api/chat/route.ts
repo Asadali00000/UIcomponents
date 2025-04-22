@@ -28,10 +28,7 @@ export async function POST(request:Request) {
             parts: [{ text: msg.content }]
           }));
 
-          // Extract the latest user message
-
-          // For Gemini, we need to use a different approach for system instructions
-          // Add the system instructions as a preamble to the conversation
+ 
           const systemInstructions = {
             role: "model",
             parts: [{
