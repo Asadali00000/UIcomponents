@@ -4,3 +4,35 @@
   --background: #ffffff;
 }
  
+html{
+width: 100%;
+height: 100%;  
+font-family: 'urbanist',serif;
+}
+body{
+  width: 100%;
+  height: 100%;  
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+@media (max-width:768px){
+	html{
+		font-size: 80%;
+	}
+}
+@media (max-width:480px){
+	html{
+		font-size: 60%;
+	}
+}
+@media (max-width:400px){
+	html{
+		font-size: 50%;
+	}
+}
+
+

@@ -1,0 +1,53 @@
+.container {
+  color: #999;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: bold;
+  padding-top: 200px;  
+  position: fixed;
+  width: 100%;
+  bottom: 45%;
+  display: flex;
+  flex-direction: column;
+   
+}
+ 
+.flip{
+  color: black;
+   height: 60px;
+   display: inline-block;
+   overflow: hidden;
+}
+.flip div{
+  color: #fff;
+  height: 60px;
+  margin-bottom: 60px;
+  padding: 0 10px;
+  display: block;
+  width: fit-content;
+}
+.flip div:nth-child(1){
+  animation: show 5s linear infinite; 
+  background: #4ec7f3;
+
+}
+.flip div:nth-child(2) {
+  background: #42c58a;
+}
+
+.flip div:nth-child(3) {
+  background: #DC143C;
+}
+
+ 
+
+  @keyframes show {
+    0% {margin-top: -360px;}
+    5% {margin-top: -240px;}
+    33% {margin-top: -240px;}
+    38% {margin-top: -120px;}
+    66% {margin-top: -120px;}
+    71% {margin-top: 0px;}
+    99.99% {margin-top: 0px;}
+    100% {margin-top: -30px;}
+  }   
