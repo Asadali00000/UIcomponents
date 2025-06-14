@@ -1,0 +1,65 @@
+.button {
+  font-family: inherit;
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.default {
+  background-color: var(--btn-bg, #007bff);
+  color: var(--btn-text, #fff);
+}
+
+.destructive {
+  background-color: var(--btn-bg, #dc3545);
+  color: var(--btn-text, #fff);
+}
+
+.outline {
+  background-color: transparent;
+  border-color: var(--btn-bg, #007bff);
+  color: var(--btn-bg, #007bff);
+}
+
+.secondary {
+  background-color: var(--btn-bg, #6c757d);
+  color: var(--btn-text, #fff);
+}
+
+.ghost {
+  background-color: transparent;
+  color: var(--btn-bg, #007bff);
+}
+
+.sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+.md {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.lg {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+}
+
+.button:hover {
+  filter: brightness(0.9);
+}
+
+.button:focus {
+  outline: 2px solid #0056b3;
+  outline-offset: 2px;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
