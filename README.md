@@ -12,7 +12,7 @@ What we want this project to be
 A comprehensive UI component library for React/Next.js developers
 A go-to resource for both simple components and complex integration patterns
 An open-source project where developers can contribute new components and examples
-A showcase of modern web development practices with TypeScript and CSS Modules(use already exist component if you dont know about this)
+A showcase of modern web development practices with TypeScript and CSS Modules 
 
 # Clone the repository
 git clone https://github.com/Asadali00000/UIcomponents.git
